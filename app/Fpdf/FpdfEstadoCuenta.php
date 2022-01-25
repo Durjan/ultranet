@@ -14,13 +14,13 @@ class FpdfEstadoCuenta extends Fpdf{
         if ( $this->PageNo() == 1 ) {
            
             // Logo
-            $this->Image('assets/images/LOGO.png',10,5,50,20); //(x,y,w,h)
+            $this->Image('assets/images/LOGO.jpg',10,5,50,20); //(x,y,w,h)
             // Arial bold 15
             $this->SetFont('Arial','B',18);
             // Movernos a la derecha
             $this->SetXY(65,10);
             // Título
-            $this->Cell(30,10,'TECNNITEL S.A de C.V.');
+            $this->Cell(30,10,'ULTRANET S.A de C.V.');
             $this->SetXY(66,16);
             $this->SetFont('Arial','',10);
             $this->Cell(30,10,'SERVICIO DE TELECOMUNICACIONES');

@@ -3287,7 +3287,7 @@ La suma antes mencionada la pagaré en esta ciudad, en las oficinas principales 
         $fpdf = new FpdfEstadoCuenta('L','mm', 'Letter');
         $fpdf->AliasNbPages();
         $fpdf->AddPage();
-        $fpdf->SetTitle('ESTADO DE CUENTA | UNINET');
+        $fpdf->SetTitle('ESTADO DE CUENTA | ULTRANET');
 
         $fpdf->SetXY(250,10);
         $fpdf->SetFont('Arial','',8);
