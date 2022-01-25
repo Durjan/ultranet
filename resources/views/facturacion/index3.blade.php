@@ -72,15 +72,15 @@
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <span class="logo-lg">
-                                            <img src="{{ URL::asset('assets/images/LOGO.png')}}" alt="" height="70">
+                                            <img src="{{ URL::asset('assets/images/LOGO.jpg')}}" alt="" height="70">
                                         </span>
                                     </div>
                                     <div class="col-lg-5">
                                         <h4>
-                                            <strong>TECNNITEL S.A. DE C.V</strong>
+                                            <strong>ULTRANET S.A. DE C.V</strong>
                                         </h4>
                                         <p>
-                                            <strong>Col. Cuscatlan Block C, #16 Apopa San salvador</strong>
+                                            <strong>Res Villa Primavera Pol. 7 Casa 106 Quezaltepeque, La Libertad</strong>
                                         </p>
                                     </div>
                                     <div class="col-lg-3">
