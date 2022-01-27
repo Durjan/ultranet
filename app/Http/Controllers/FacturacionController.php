@@ -99,7 +99,7 @@ class FacturacionController extends Controller
             $xdatos['total']=number_format($factura->total,2);
             $municipio=$factura->get_cliente->get_municipio->nombre;
             $departamento=$factura->get_cliente->get_municipio->get_departamento->nombre;
-            if(!isset($municipio)){
+            if(isset($municipio)){
                 $municipio=" ";
                 $departamento=" ";
             }
