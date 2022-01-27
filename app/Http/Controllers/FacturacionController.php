@@ -97,7 +97,13 @@ class FacturacionController extends Controller
             $xdatos['iva']=number_format($factura->iva,2);
             $xdatos['sumas']=number_format($factura->sumas,2);
             $xdatos['total']=number_format($factura->total,2);
-            $xdatos['direccion']=$factura->get_cliente->dirreccion.' '. strtoupper($factura->get_cliente->get_municipio->nombre).' '.strtoupper($factura->get_cliente->get_municipio->get_departamento->nombre);
+            $municipio=$factura->get_cliente->get_municipio->nombre;
+            $departamento=$factura->get_cliente->get_municipio->get_departamento->nombre;
+            if($municipio==0){
+                $municipio=" ";
+                $departamento=" ";
+            }
+            $xdatos['direccion']=$factura->get_cliente->dirreccion.' '. strtoupper($municipio).' '.strtoupper($departamento);
             return $xdatos;
         }else{
             $factura=Factura::find($id);
