@@ -97,12 +97,13 @@ class FacturacionController extends Controller
             $xdatos['iva']=number_format($factura->iva,2);
             $xdatos['sumas']=number_format($factura->sumas,2);
             $xdatos['total']=number_format($factura->total,2);
-            $municipio=$factura->get_cliente->get_municipio->nombre;
-            $departamento=$factura->get_cliente->get_municipio->get_departamento->nombre;
-            if(isset($municipio)){
-                $municipio=" ";
-                $departamento=" ";
-            }
+            if(!isset($factura->get_cliente->get_municipio->nombre)){
+                $municipio="Imcompleto";
+                
+            }else{$municipio=$factura->get_cliente->get_municipio->nombre;}
+            if(!isset($factura->get_cliente->get_municipio->get_departamento->nombre)){
+                $departamento="Imcompleto";
+            }else{$departamento=$factura->get_cliente->get_municipio->get_departamento->nombre;}
             $xdatos['direccion']=$factura->get_cliente->dirreccion.' '. strtoupper($municipio).' '.strtoupper($departamento);
             return $xdatos;
         }else{
@@ -135,12 +136,13 @@ class FacturacionController extends Controller
             $xdatos['iva']=number_format($factura->iva,2);
             $xdatos['sumas']=number_format($factura->sumas,2);
             $xdatos['total']=number_format($factura->total,2);
-            $municipio=$factura->get_cliente->get_municipio->nombre;
-            $departamento=$factura->get_cliente->get_municipio->get_departamento->nombre;
-            if(isset($municipio)){
-                $municipio=" ";
-                $departamento=" ";
-            }
+            if(!isset($factura->get_cliente->get_municipio->nombre)){
+                $municipio="Imcompleto";
+                
+            }else{$municipio=$factura->get_cliente->get_municipio->nombre;}
+            if(!isset($factura->get_cliente->get_municipio->get_departamento->nombre)){
+                $departamento="Imcompleto";
+            }else{$departamento=$factura->get_cliente->get_municipio->get_departamento->nombre;}
             $xdatos['direccion']=$factura->get_cliente->dirreccion.' '. strtoupper($municipio).' '.strtoupper($departamento);
             return $xdatos;   
         }
