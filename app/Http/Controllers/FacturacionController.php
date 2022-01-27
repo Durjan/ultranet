@@ -141,7 +141,7 @@ class FacturacionController extends Controller
                 $municipio=" ";
                 $departamento=" ";
             }
-            $xdatos['direccion']=$factura->get_cliente->dirreccion.' '. strtoupper($factura->get_cliente->get_municipio->nombre).' '.strtoupper($factura->get_cliente->get_municipio->get_departamento->nombre);
+            $xdatos['direccion']=$factura->get_cliente->dirreccion.' '. strtoupper($municipio).' '.strtoupper($departamento);
             return $xdatos;   
         }
     }
