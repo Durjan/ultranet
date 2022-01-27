@@ -11,8 +11,8 @@ Login
             <div class="col-lg-12">
                 <div class="text-center">
                     <a href="{{url('index')}}" class="mb-5 d-block auth-logo">
-                        <img src="{{ URL::asset('assets/images/LOGO.jpg')}}" alt="" height="100" class="logo logo-dark">
-                        <img src="{{ URL::asset('assets/images/LOGO.jpg')}}" alt="" height="100" class="logo logo-light">
+                        <img src="{{ URL::asset('assets/images/LOGO.png')}}" alt="" height="100" class="logo logo-dark">
+                        <img src="{{ URL::asset('assets/images/LOGO.png')}}" alt="" height="100" class="logo logo-light">
                     </a>
                 </div>
             </div>
