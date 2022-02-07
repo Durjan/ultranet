@@ -283,7 +283,7 @@
 
                     }
                 });
-            $('#myModal').modal('show') 
+            $('#myModal').modal('show');
         }
         function imprimir(id_factura){
             var efectivov=0;
