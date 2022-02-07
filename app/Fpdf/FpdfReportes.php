@@ -13,7 +13,7 @@ class FpdfReportes extends Fpdf{
         if ( $this->PageNo() == 1 ) {
            
             // Logo
-            $this->Image('assets/images/LOGO.jpg',10,5,60,25); //(x,y,w,h)
+            $this->Image('assets/images/LOGO.png',10,5,60,25); //(x,y,w,h)
             // Arial bold 15
             $this->SetFont('Arial','B',22);
             // Movernos a la derecha
