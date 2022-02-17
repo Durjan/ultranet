@@ -1569,7 +1569,7 @@ Este contrato no incluye servicios adicionales como el servicio de PAGAR POR VER
             $corte_dia=["","",""];
             $corte_fecha=["","",""];
         }
-        $fpdf->Image('assets/images/LOGO.jpg',15,83,60,25); //(x,y,w,h)
+        $fpdf->Image('assets/images/LOGO.png',15,83,60,25); //(x,y,w,h)
         $fpdf->SetXY(120,86);
         $fpdf->SetFont('Arial','B',18);
         $fpdf->cell(40,10,utf8_decode('PAGARÉ SIN PROTESTO'));
@@ -1619,7 +1619,7 @@ La suma antes mencionada la pagaré en esta ciudad, en las oficinas principales 
         //$fpdf->SetTitle('CONTRATOS | UNINET');
 
         // Logo
-        $fpdf->Image('assets/images/LOGO.jpg',10,5,60,25); //(x,y,w,h)
+        $fpdf->Image('assets/images/LOGO.png',10,5,60,25); //(x,y,w,h)
         // Arial bold 15
         $fpdf->SetFont('Arial','B',22);
         // Movernos a la derecha
@@ -1955,7 +1955,7 @@ Este contrato no incluye servicios adicionales como el servicio de PAGAR POR VER
             $corte_dia=["","",""];
             $corte_fecha=["","",""];
         }
-        $fpdf->Image('assets/images/LOGO.jpg',15,83,60,25); //(x,y,w,h)
+        $fpdf->Image('assets/images/LOGO.png',15,83,60,25); //(x,y,w,h)
         $fpdf->SetXY(120,86);
         $fpdf->SetFont('Arial','B',18);
         $fpdf->cell(40,10,utf8_decode('PAGARÉ SIN PROTESTO'));
