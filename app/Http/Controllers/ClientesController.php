@@ -1576,7 +1576,7 @@ Este contrato no incluye servicios adicionales como el servicio de PAGAR POR VER
 
         $fpdf->SetFont('Arial','',12);
         $fpdf->SetXY(143,92);
-        $fpdf->cell(40,10,utf8_decode('Apopa '.$corte_dia[0].' de '.$this->spanishMes($corte_fecha[1]).' de '.$corte_fecha[0].'.'));
+        $fpdf->cell(40,10,utf8_decode('Quezaltepeque '.$corte_dia[0].' de '.$this->spanishMes($corte_fecha[1]).' de '.$corte_fecha[0].'.'));
 
         $fpdf->SetXY(168,98);
         $fpdf->cell(40,10,utf8_decode('Por: U$ '.($contrato_internet[0]->cuota_mensual*$contrato_internet[0]->periodo)));
